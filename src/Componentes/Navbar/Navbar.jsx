@@ -6,9 +6,12 @@ import shape from './Shape.png';
 import imgExemplo from './exemploBarbeiro.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ModalAgendamento from '../ModalAgendamento/ModalAgendamento';
+import Cadastro from '../Cadastro/Cadastro';
+import { set } from 'react-hook-form';
 
 const Navbar = () => {
   const [btnModal, setBtnModal] = useState(false);
+  const [estadoLi, setEstadoLi] = useState(false);
 
   function alterandoBtnModal(event) {
     event.preventDefault();
@@ -17,6 +20,10 @@ const Navbar = () => {
 
   function fechaModal(event) {
     setBtnModal(false);
+  }
+  function handleClick(event) {
+    event.preventDefault();
+    setEstadoLi(!estadoLi);
   }
 
   return (
@@ -30,8 +37,9 @@ const Navbar = () => {
           <li>Sobre</li>
           <li>Depoimentos</li>
           <li>
-            <a>Cadastro</a>
+            <a onClick={handleClick}>Cadastro</a>
           </li>
+          {estadoLi && <Cadastro fechaModal={fechaModal} />}
         </ul>
       </header>
       <div id="agendaHorario">
