@@ -1,0 +1,63 @@
+body {
+    background-image: url(https://figarobarbearia.com.br/wp-content/uploads/2015/04/stripe-1.png);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: initial;
+    background-repeat: repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(245, 245, 245);
+}
+
+.titulo {
+    color: white;
+}
+
+.custom-radio .form-check-input {
+    width: 20px;
+    height: 20px;
+   
+  }
+  
+  .custom-radio .form-check-input:checked {
+    background-color: #69B99D; /* Cor quando selecionado */
+    border-color: #69B99D; /* Cor da borda quando selecionado */
+  }
+  
+  .custom-radio .form-check-input:checked::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white; /* Cor do círculo interno */
+    position: absolute;
+    top: 3px;
+    left: 3px;
+  }
+  
+  
+  /* Estilo padrão para os checkboxes */
+.custom-checkbox .form-check-input {
+  width: 20px;
+  height: 20px;
+  
+}
+
+.custom-checkbox .form-check-input:checked {
+  background-color: #69B99D; /* Cor quando selecionado */
+  border-color: #69B99D; /* Cor da borda quando selecionado */
+}
+
+.custom-checkbox .form-check-input:checked::before {
+  content: '✓';
+  color: white; /* Cor do checkmark */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.custom-border {
+    border: 2px solid #69B99D;
+}

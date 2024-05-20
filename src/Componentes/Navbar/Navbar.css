@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+
+/* Estilo para alinhar a logo à esquerda e os itens da lista à direita com ajuste para a esquerda */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha verticalmente ao centro */
+    margin-left: 40px; /* Ajuste para mover todo o cabeçalho para a esquerda */
+    margin-right: 8%;
+    font-size: 20px;
+    font-family: 'DM Sans', sans-serif;
+    color: #0F241D;
+    padding: 10px 20px; /* Reduz o padding para diminuir a altura do cabeçalho */
+    border-bottom: 1px solid #E4E4E4;
+}
+
+.logo img {
+    vertical-align: middle;
+    width: 20%; /* Reduz a largura da logo */
+}
+
+ul#lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-grow: 1; /* Permite que a lista ocupe mais espaço disponível */
+    justify-content: flex-end; /* Alinha os itens à direita */
+}
+
+ul#lista li:hover {
+    color: #69B99D;
+    border-bottom: 3px solid #69B99D;
+    padding-bottom: 8px;
+}
+
+ul#lista li {
+    margin-left: 70px; /* Espaçamento à esquerda entre os itens da lista */
+}
+
+#titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    color: #0F241D;
+}
+
+#subtitulo {
+    font-family: 'DM Sans';
+    color: #767676;
+    font-size: 20px;
+}
+
+#btn {
+    padding-top: 14px;
+    padding-bottom: 15px;
+    padding-left: 70px;
+    padding-right: 60px;
+    border-radius: 4px;
+    background: #69B99D;
+    color: #F9F9F9;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border-color: transparent;
+    border-style: solid;
+}
+
+#agendaHorario {
+    position: absolute;
+    top: 300px;
+    left: 250px;
+}
+
+#imagens {
+    position: absolute;
+    top: 280px;
+    left: 45%;
+    width: 35%;
+}
+
+#shape {
+    position: absolute;
+    top: 210px;
+    left: 50%;
+    width: 700px;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.fechar {
+    background: none;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
