@@ -1,0 +1,147 @@
+/* Footer.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif; /* Define uma fonte mais moderna */
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ocupa toda a altura da tela */
+}
+
+.footer-white {
+  background-color: white; /* Cor de fundo branca */
+  flex: 3; /* 3/4 da tela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px; /* Espaçamento interno */
+  box-sizing: border-box; /* Inclui padding e border no cálculo do tamanho total do elemento */
+}
+
+.footer-green {
+  background-color: #69B99D; /* Cor de fundo verde suave */
+  color: white; /* Cor do texto */
+  flex: 1; /* 1/4 da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Espaçamento interno */
+  box-sizing: border-box; /* Inclui padding e border no cálculo do tamanho total do elemento */
+}
+
+.footer-content {
+  text-align: center; /* Alinhamento do texto */
+}
+
+.left-content, .right-content {
+  flex: 1;
+  margin: 20px 0;
+  min-width: 250px;
+}
+
+.left-content h2 {
+  margin-bottom: 20px;
+  font-size: 24px; /* Tamanho da fonte do título */
+}
+
+.slogan {
+  margin-bottom: 30px;
+  font-size: 18px; /* Tamanho da fonte do slogan */
+  font-style: italic; /* Estilo itálico para o slogan */
+}
+
+.highlight {
+  font-weight: bold; /* Negrito */
+  font-size: 28px; /* Tamanho maior para destaque */
+}
+
+.whatsapp-button {
+  background-color: darkcyan; /* Cor de fundo do botão do WhatsApp */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Remover borda do botão */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  border-radius: 5px; /* Arredondamento das bordas do botão */
+  font-weight: bold; /* Texto em negrito */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+  transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.whatsapp-button a {
+  color: white; /* Cor do texto do link */
+  text-decoration: none; /* Remove underline */
+  margin-left: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contato-item p {
+  margin-left: 10px; /* Espaçamento entre o ícone e o texto */
+  margin: 0; /* Remover margem padrão */
+}
+
+/* Contêiner para as informações */
+.info {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 6cm; /* Ajuste este valor para mover as informações */
+}
+
+/* Contêiner para os ícones */
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: -15cm; /* Ajuste este valor para mover os ícones */
+}
+
+
+
+
+.social-icons a {
+  color: white; /* Cor dos ícones de redes sociais */
+  font-size: 1.2em; /* Tamanho dos ícones */
+  margin-right: 10px; /* Espaçamento à direita entre os ícones */
+  margin-left: 10px; /* Espaçamento à esquerda entre os ícones */
+  transition: color 0.3s ease; /* Transição suave da cor */
+}
+
+.social-icons a.whatsapp,
+.social-icons a.telegram,
+.social-icons a.instagram {
+  margin-right: 30px; /* Ajusta a margem para os ícones selecionados (aumentei para 20px) */
+}
+
+.social-icons a:hover {
+  color: #ddd; /* Cor dos ícones ao passar o mouse */
+}
+
+.footer-bottom {
+  border-top: 1px solid #fff; /* Linha superior */
+  padding-top: 10px; /* Espaçamento acima da linha */
+  width: 100%;
+  max-width: 1200px;
+  text-align: center; /* Centralizar texto */
+}
+
+.icon {
+  font-size: 1.2em; /* Tamanho dos ícones */
+}
