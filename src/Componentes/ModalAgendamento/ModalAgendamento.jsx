@@ -18,7 +18,6 @@ function ModalAgendamento({ fechaModal }) {
 
   return (
     <div className="modal-container">
-      {' '}
       <Modal.Dialog>
         <div>
           <Modal.Title className="mt-2 mb-3">Meu agendamento</Modal.Title>

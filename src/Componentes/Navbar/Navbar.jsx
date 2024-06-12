@@ -1,29 +1,41 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import logo from './logoBarbearia.png';
-import AgendamentoModal from '../AgendamentoModal/Agendamento';
 import shape from './Shape.png';
 import imgExemplo from './exemploBarbeiro.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ModalAgendamento from '../ModalAgendamento/ModalAgendamento';
 import Cadastro from '../Cadastro/Cadastro';
-import { set } from 'react-hook-form';
+import ModalReservas from '../ModalReservas/ModalReservas';
 
 const Navbar = () => {
   const [btnModal, setBtnModal] = useState(false);
   const [estadoLi, setEstadoLi] = useState(false);
+  const [reservasModal, setReservasModal] = useState(false);
 
   function alterandoBtnModal(event) {
     event.preventDefault();
     setBtnModal(!btnModal);
   }
 
-  function fechaModal(event) {
+  function fechaModal() {
     setBtnModal(false);
+    setEstadoLi(false);
+    setReservasModal(false);
   }
+
   function handleClick(event) {
     event.preventDefault();
     setEstadoLi(!estadoLi);
+  }
+
+  function handleReservasClick(event) {
+    event.preventDefault();
+    setReservasModal(true);
+  }
+
+  function handleInicioClick() {
+    window.location.reload(); // Recarrega a página
   }
 
   return (
@@ -33,9 +45,12 @@ const Navbar = () => {
           <img src={logo} alt="Logo" />
         </div>
         <ul id="lista">
-          <li>Início</li>
+          <li onClick={handleInicioClick}>Início</li>
           <li>Sobre</li>
           <li>Depoimentos</li>
+          <li>
+            <a onClick={handleReservasClick}>Reservas</a>
+          </li>
           <li>
             <a onClick={handleClick}>Cadastro</a>
           </li>
@@ -56,10 +71,11 @@ const Navbar = () => {
         {btnModal && <ModalAgendamento fechaModal={fechaModal} />}
       </div>
       <img src={shape} id="shape" alt="" />
-
       <div>
         <img id="imagens" src={imgExemplo} alt="" />
       </div>
+      {reservasModal && <ModalReservas fechaModal={fechaModal} />}
+      <footer/>
     </div>
   );
 };
