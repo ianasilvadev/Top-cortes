@@ -78,15 +78,16 @@ ul#lista li {
 #imagens {
     position: absolute;
     top: 280px;
-    left: 45%;
+    left: 60%;
     width: 35%;
 }
 
 #shape {
     position: absolute;
     top: 210px;
-    left: 50%;
+    left: 57%;
     width: 700px;
+    max-width: max-content;
 }
 
 .modal-container {
