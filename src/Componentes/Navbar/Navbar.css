@@ -30,6 +30,7 @@ ul#lista {
     display: flex;
     flex-grow: 1; /* Permite que a lista ocupe mais espaço disponível */
     justify-content: flex-end; /* Alinha os itens à direita */
+    cursor: pointer;
 }
 
 ul#lista li:hover {

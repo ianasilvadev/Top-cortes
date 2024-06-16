@@ -7,7 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ModalAgendamento from '../ModalAgendamento/ModalAgendamento';
 import Cadastro from '../Cadastro/Cadastro';
 import ModalReservas from '../ModalReservas/ModalReservas';
-
+import Footer from '../Footer/Footer';
+import Service from '../Servicos/service';
 const Navbar = () => {
   const [btnModal, setBtnModal] = useState(false);
   const [estadoLi, setEstadoLi] = useState(false);
@@ -35,7 +36,7 @@ const Navbar = () => {
   }
 
   function handleInicioClick() {
-    window.location.reload(); // Recarrega a página
+    window.location.reload(); 
   }
 
   return (
@@ -75,7 +76,15 @@ const Navbar = () => {
         <img id="imagens" src={imgExemplo} alt="" />
       </div>
       {reservasModal && <ModalReservas fechaModal={fechaModal} />}
-      <footer/>
+      <div className="ServiceContainer">
+      <Service/>
+      </div>
+      <div className='FooterCoontainer'>
+        <Footer/>
+      </div>
+      <div className="SobreContainer">
+
+      </div>
     </div>
   );
 };

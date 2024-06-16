@@ -1,5 +1,8 @@
 .Distance {
     height: 5rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40%;
 }
 
 .Title {
@@ -18,7 +21,8 @@
 
 .Card {
     display: inline-block;
-    margin-left: 10%;
+    margin-left: 15%;
+    margin-top: 5%;
     text-align: center;
     margin-right: 30px;
     width: 15rem;
@@ -27,4 +31,10 @@
 }
 .CardImg {
     width: 45%;
+}
+
+.DistanceBottom {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
 }

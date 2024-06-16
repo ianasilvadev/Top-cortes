@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card';
 function Service() {
     return(
         <>
-        <hr className="Distance"/>
+        <div className="Distance"></div>
 
         <h1 className="Title">Serviços</h1>
         <p className="Desc">
@@ -46,7 +46,7 @@ function Service() {
         </Card>
         </div>
 
-        <hr className="Distance"/>
+        <div className="DistanceBottom"></div>
         </>
     );
 }
