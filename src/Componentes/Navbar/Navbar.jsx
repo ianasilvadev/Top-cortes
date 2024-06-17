@@ -80,18 +80,17 @@ const Navbar = () => {
       </div>
       {reservasModal && <ModalReservas fechaModal={fechaModal} />}
       <div className="SobreContainer">
-      {/* <Sobre/> */}
+        <Sobre/>
       </div>
       <div className="ServiceContainer">
-      {/* <Service/> */}
+        <Service/>
       </div>
       <div className="DepoimentosContainer">
-        {/* <Depoimentos/> */}
+        <Depoimentos/>
       </div>
       <div className='FooterCoontainer'>
-        {/* <Footer/> */}
+        <Footer/>
       </div>
-  
     </div>
   );
 };

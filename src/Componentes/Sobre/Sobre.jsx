@@ -7,7 +7,7 @@ function Sobre () {
         <>
         <div className="DistanceAbout"></div>
         <div className="TitleContainer">
-            <h1 className="Title">Sobre Nós</h1>
+            <h1 className="TitleAbout">Sobre Nós</h1>
         </div>
         <div className="shadow">
             <img src={shape} alt="Imagem de sombreamento"/>

@@ -15,7 +15,7 @@ header {
     font-family: 'DM Sans', sans-serif;
     color: #0F241D;
     padding: 10px 20px; /* Reduz o padding para diminuir a altura do cabeçalho */
-    border-bottom: 1px solid #E4E4E4;
+    border-bottom: 1px solid #E4E4E4
 }
 
 .logo img {
