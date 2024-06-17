@@ -9,6 +9,9 @@ import Cadastro from '../Cadastro/Cadastro';
 import ModalReservas from '../ModalReservas/ModalReservas';
 import Footer from '../Footer/Footer';
 import Service from '../Servicos/service';
+import Sobre from '../Sobre/Sobre';
+import Depoimentos from '../Depoimentos/Depoimentos';
+
 const Navbar = () => {
   const [btnModal, setBtnModal] = useState(false);
   const [estadoLi, setEstadoLi] = useState(false);
@@ -76,15 +79,19 @@ const Navbar = () => {
         <img id="imagens" src={imgExemplo} alt="" />
       </div>
       {reservasModal && <ModalReservas fechaModal={fechaModal} />}
+      <div className="SobreContainer">
+      {/* <Sobre/> */}
+      </div>
       <div className="ServiceContainer">
-      <Service/>
+      {/* <Service/> */}
+      </div>
+      <div className="DepoimentosContainer">
+        {/* <Depoimentos/> */}
       </div>
       <div className='FooterCoontainer'>
-        <Footer/>
+        {/* <Footer/> */}
       </div>
-      <div className="SobreContainer">
-
-      </div>
+  
     </div>
   );
 };

@@ -7,6 +7,8 @@ import Service from './Componentes/Servicos/service';
 import Footer from './Componentes/Footer/Footer';
 import Alerta from './Componentes/AgendamentoAlerta/Alerta'; 
 import Reserva from './Componentes/ModalReservas/ModalReservas';
+import Sobre from './Componentes/Sobre/Sobre'
+import Depoimentos from './Componentes/Depoimentos/Depoimentos';
 
 function App() {
   return (
@@ -14,9 +16,11 @@ function App() {
       <Routes>
         <Route path='/' element={<Navbar />} />
         <Route path='/reserva' element={<Reserva/>} />
+        <Route path='/sobre' element={<Sobre/>} />
+        <Route path="/service" element={<Service />} />
+        <Route path='/Depoimentos' element={<Depoimentos/>} />
         <Route path="/footer" element={<Footer />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/service" element={<Service />} />
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/alerta" element={<Alerta />} /> 
       </Routes>

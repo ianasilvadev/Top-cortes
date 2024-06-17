@@ -1,0 +1,45 @@
+.TitleDepoimentos {
+    position: absolute;
+    top: 100px;
+    left: 34%;
+    width: 35%;
+}
+
+.CardDepoimentos {
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 5%;
+    text-align: center;
+    margin-right: 30px;
+    width: 37%;
+    top: 210px;
+}
+
+.Aspas {
+    display: flex;
+    align-items: center;
+}
+
+.Descricao {
+    display: flex;
+    position: relative;
+    top: -20px;
+    margin-left: 5%;
+}
+
+.Perfil {
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.User {
+    position: relative;
+    display: flex;
+    margin-left: 17%;
+    bottom: 20%;
+    top: -40px;
+}

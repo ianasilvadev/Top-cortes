@@ -1,0 +1,40 @@
+.DistanceAbout {
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0%;
+}
+.Title {
+    position: absolute;
+    top: 210px;
+    left: 40%;
+    width: 35%;
+}
+
+.shadow {
+    position: absolute;
+    top: 210px;
+    right: 57%;
+    width: 700px;
+    max-width: max-content;
+}
+
+.Img {
+    position: absolute;
+    top: 280px;
+    right: 60%;
+    width: 35%;
+}
+
+.Conteudo {
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    width: 35%;
+}
+
+
+.DistanceBtm {
+    display: flex;
+    flex-direction: column;
+}
